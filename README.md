@@ -13,9 +13,11 @@ kafka klasörü içerisinde "zookeeper_data" ve "kafka-logs" isimli alt klasörl
 >log.dirs=C:\kafka\kafka-logs
 
 * config/server.properties dosyası içerisine şu satırlar da yoksa eklenir.
->offsets.topic.num.partitions=1
->min.insync.replicas=1
->default.replication.factor=1
+
+`` offsets.topic.num.partitions=1
+min.insync.replicas=1
+default.replication.factor=1 
+``
 
 * Kafka server çalıştırmak için, cmd ekranı açılır ve şu script çalıştırılır;
 >zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
@@ -23,3 +25,13 @@ kafka klasörü içerisinde "zookeeper_data" ve "kafka-logs" isimli alt klasörl
 Şu ekran görüntüsü geldiğinde, Kafka server çalışır durumdadır demektir.
 
 ![Screenshot](https://user-images.githubusercontent.com/7340804/66754064-d1e17280-ee9d-11e9-852a-fb30792b95e9.png)
+
+
+Postman uygulaması ile örnek obje post ederek test ederiz;
+
+``{
+	"field1" : "field1",
+	"field2" : "field2"
+}``
+
+![Screenshot_2](https://user-images.githubusercontent.com/7340804/66754232-33a1dc80-ee9e-11e9-80f6-a61ed23c87f6.png)
