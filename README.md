@@ -27,7 +27,11 @@ default.replication.factor=1
 ![Screenshot](https://user-images.githubusercontent.com/7340804/66754064-d1e17280-ee9d-11e9-852a-fb30792b95e9.png)
 
 
-Postman uygulaması ile örnek obje post ederek test ederiz;
+Postman uygulaması ile örnek obje post ederek test ederiz. Göndermeden önce, post edilen objeyi yakalamak için, yeni bir cmd ekranı açılır (cmd ekranında, kafka klasörü lokasyonuna gidilir öncelikle) ve şu script çalıştırılır;
+
+> bin\kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myTopic  
+
+Daha sonra Postman ile girilen değerler post edilir;
 
 > {  
 >	"field1" : "field1",  
@@ -35,3 +39,5 @@ Postman uygulaması ile örnek obje post ederek test ederiz;
 > }  
 
 ![Screenshot_2](https://user-images.githubusercontent.com/7340804/66754232-33a1dc80-ee9e-11e9-80f6-a61ed23c87f6.png)
+
+
