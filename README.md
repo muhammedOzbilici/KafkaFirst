@@ -21,3 +21,5 @@ kafka klasörü içerisinde "zookeeper_data" ve "kafka-logs" isimli alt klasörl
 >zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
 
 Şu ekran görüntüsü geldiğinde, Kafka server çalışır durumdadır demektir.
+
+![Screenshot](https://user-images.githubusercontent.com/7340804/66754064-d1e17280-ee9d-11e9-852a-fb30792b95e9.png)
