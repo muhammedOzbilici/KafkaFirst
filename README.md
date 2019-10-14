@@ -14,10 +14,10 @@ kafka klasörü içerisinde "zookeeper_data" ve "kafka-logs" isimli alt klasörl
 
 * config/server.properties dosyası içerisine şu satırlar da yoksa eklenir.
 
-`` offsets.topic.num.partitions=1
-min.insync.replicas=1
-default.replication.factor=1 
-``
+> offsets.topic.num.partitions=1  
+min.insync.replicas=1  
+default.replication.factor=1  
+>
 
 * Kafka server çalıştırmak için, cmd ekranı açılır ve şu script çalıştırılır;
 >zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
@@ -29,9 +29,9 @@ default.replication.factor=1
 
 Postman uygulaması ile örnek obje post ederek test ederiz;
 
-``{
-	"field1" : "field1",
-	"field2" : "field2"
-}``
+> {  
+>	"field1" : "field1",  
+>	"field2" : "field2"  
+> }  
 
 ![Screenshot_2](https://user-images.githubusercontent.com/7340804/66754232-33a1dc80-ee9e-11e9-80f6-a61ed23c87f6.png)
